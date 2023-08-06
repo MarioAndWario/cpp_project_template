@@ -1,0 +1,18 @@
+# Mac
+.DS_Store
+
+# Object files
+.o
+
+# Libraries
+*.so
+*.a
+
+# Executables
+*.out
+
+# VSCode
+settings.json
+
+#build/
+build/*
