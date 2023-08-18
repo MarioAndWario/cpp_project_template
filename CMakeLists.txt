@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
-set(PROJECT_NAME hello_world)
+set(PROJECT_NAME graph)
 
 project(${PROJECT_NAME})
 
@@ -16,10 +16,10 @@ file(GLOB INC_FILES CONFIGURE_DEPENDS "src/*.h")
 file(GLOB SRC_FILES CONFIGURE_DEPENDS "src/*.cpp")
 
 # Boost
-find_package(Boost REQUIRED)
+find_package(Boost REQUIRED graph)
 
 # Unittests
 add_subdirectory(test)
 
 add_executable(${PROJECT_NAME} ${INC_FILES} ${SRC_FILES})
-target_link_libraries(${PROJECT_NAME} Boost::boost)
+target_link_libraries(${PROJECT_NAME} Boost::boost Boost::graph)
