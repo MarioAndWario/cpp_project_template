@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
-set(PROJECT_NAME hello_world)
+set(PROJECT_NAME cpptest)
 
 project(${PROJECT_NAME})
 
